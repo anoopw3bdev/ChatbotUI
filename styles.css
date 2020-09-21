@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.container{
+    width: 450px;
+   
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+.section1{
+    background: rgb(224, 110, 10);
+    height: 260px;
+    z-index: 1;
+    color: white;
+    border-radius: 10px 10px 0 0 ;
+    margin-top: 2px;
+    animation: section-1 ;
+
+}
+.section1 .name{
+    font-size: 200%;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding-left: 55px;
+    padding-top: 25px;
+    animation-name: section-1-sub;
+    animation-delay: 4s;
+}
+.section1 .hello {
+    padding-left: 55px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.section1 .hello >p{
+    padding-top: 10px;
+    font-weight: bolder;
+    line-height: 1.4;
+}
+.section1 .bot{
+    width: 70px;
+    height: 70px;
+    z-index: 5;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 10px;
+    background-color: rgb(241, 129, 30);
+    border-radius: 50%;
+
+}
+
+.section1 .bot >i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.empty-section{
+    z-index: 2;
+    background: rgb(245,245,245);
+    height: 350px;
+    border-radius: 0 0 10px 10px;
+}
+.section3{
+    z-index: 3;
+    margin-left: 20px;
+    margin-top: -420px;
+    background: white;
+    width: 410px;
+    height: 350px;
+    padding-top: 50px;
+    border-radius: 10px;
+}
+.section3 > h4{
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+
+.section3 >h4 > span {
+    color: rgb(206, 104, 16);
+    font-size: large;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.section3 > ul {
+    margin-left: 30px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.faq {
+    margin-top: 5px;
+    margin-left: 4px;
+    background: #fff;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    width: 340px;
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-top: 12px;
+    color: rgb(66, 63, 63);
+}
+.section3 >h3{
+    color: rgb(61, 58, 58);
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 280px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 83%;
+    transform: translate(-50%);
+    border-radius: 25px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    box-shadow: 5px 5px rgb(245,245,245);
+}
+.section3 >h3 >i{
+    color: rgb(187, 177, 177);
+    margin-right: 5px;
+}
+
