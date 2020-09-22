@@ -18,8 +18,8 @@
     color: white;
     border-radius: 10px 10px 0 0 ;
     margin-top: 2px;
-    animation: section-1 ;
-
+    animation-name: animation-1;
+    animation-duration: 3s;
 }
 .section1 .name{
     font-size: 200%;
@@ -27,13 +27,18 @@
     letter-spacing: 3px;
     padding-left: 55px;
     padding-top: 25px;
-    animation-name: section-1-sub;
-    animation-delay: 4s;
+    animation-name: animation-2;
+    animation-delay: 0s;
+    animation-duration: 6s;
+
 }
 .section1 .hello {
     padding-left: 55px;
     padding-top: 15px;
     font-weight: bold;
+    animation-name: animation-2;
+    animation-delay: 0s;
+    animation-duration: 10s
 }
 .section1 .hello >p{
     padding-top: 10px;
@@ -47,7 +52,7 @@
     position: absolute;
     margin-left: 40px;
     margin-top: 10px;
-    background-color: rgb(241, 129, 30);
+    background-color: rgb(241, 127, 28);
     border-radius: 50%;
 
 }
@@ -73,6 +78,8 @@
     height: 350px;
     padding-top: 50px;
     border-radius: 10px;
+    animation-name: animation-3;
+    animation-duration: 7s;
 }
 .section3 > h4{
     margin-left: 20px;
@@ -105,6 +112,9 @@
     padding-left: 5px;
     padding-top: 12px;
     color: rgb(66, 63, 63);
+    animation-name: animation-3;
+    animation-duration: 10s;
+    cursor: pointer;
 }
 .section3 >h3{
     color: rgb(61, 58, 58);
@@ -121,9 +131,52 @@
     padding-top: 10px;
     padding-left: 15px;
     box-shadow: 5px 5px rgb(245,245,245);
+    cursor: pointer;
+    animation-name: animation-3;
+    animation-duration: 13s;
 }
 .section3 >h3 >i{
-    color: rgb(187, 177, 177);
     margin-right: 5px;
+    color: rgb(224, 110, 10);
 }
 
+
+
+@keyframes animation-1{
+    0%{
+        transform: scale(1) translateY(-10px);
+        opacity: 0;
+    }
+   
+    100%{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes animation-2{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animation-3{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animation-4{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
