@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    
+
     <link rel="stylesheet" href="./styles.css">
     <title>Chat bot</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="popup">
         <div class="section1">
             <div class="name">
                 IRIS
@@ -34,7 +34,7 @@
         </div>
         <div class="section3">
             <h4>Frequently asked questions <span>?</span> </h4>
-            <ul >
+            <ul>
                 <li class="faq">
                     <h5>Can I redeem my FB before the original term?</h5>
                 </li>
@@ -55,6 +55,20 @@
 
         </div>
     </div>
+    <div class="icon">
+        <i class="fas fa-robot fa-2x" onclick="manageChat()"></i>
+    </div>
+    <script>
+        function manageChat() {
+            if(document.getElementById("popup").style.display === "block"){
+                document.getElementById("popup").style.display = "none"
+            }
+            else{
+                document.getElementById("popup").style.display = "block"
+            }
+            
+        }    
+    </script>
 </body>
 
 </html>

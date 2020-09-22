@@ -5,12 +5,16 @@
 }
 .container{
     width: 450px;
-   
     position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%);
+    top: 0;
+    right: 0;
+    transform: translate(-50%); 
+    overflow: hidden;
 }
+#popup{
+    display: none;
+}
+
 .section1{
     background: rgb(224, 110, 10);
     height: 260px;
@@ -139,7 +143,26 @@
     margin-right: 5px;
     color: rgb(224, 110, 10);
 }
-
+.container > button{
+    background-color: white;
+}
+.icon{
+    height: 80px;
+    width: 80px;
+    background: rgb(221, 123, 10);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.icon >i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 
 
 @keyframes animation-1{
@@ -180,3 +203,12 @@
         opacity: 1;
     }
 }
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
